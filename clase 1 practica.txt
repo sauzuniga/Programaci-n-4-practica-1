@@ -1,0 +1,67 @@
+var name="jose"
+undefined
+> var name="Andrea"
+undefined
+> name
+'Andrea'
+> name="Felipe"
+'Felipe'
+> let color="Azul"
+undefined
+> color="Amarillo"
+'Amarillo'
+> const name="Jose"
+Uncaught SyntaxError: Identifier 'name' has already been declared
+> const NAMES="Pablo"
+undefined
+> conts NAMES="Jose"
+conts NAMES="Jose"
+
+for (var i=0; i<5; i++){
+    console.log(i)}
+VM213:2 0
+VM213:2 1
+VM213:2 2
+VM213:2 3
+VM213:2 4
+
+undefined
+var a=5
+undefined
+typeof(a)
+'number'
+var a=String(a)
+undefined
+typeof(a)
+'string'
+
+var colors=["Negro","Amarillo","Rojo"]
+
+
+function getColorsD(valor){
+    console.log(`El color es ${valor}`)
+}
+    
+undefined
+for(var i=0; i<colors.length; i++){
+    getColorsD(colors[i])
+}
+VM881:2 El color es Negro
+VM881:2 El color es Amarillo
+VM881:2 El color es Rojo
+undefined
+const getColorsE = function(valor){
+    console.log(valor)}
+undefined
+for(var c of colors){getColorsD(c)}
+VM881:2 El color es Negro
+VM881:2 El color es Amarillo
+VM881:2 El color es Rojo
+undefined
+const getColorsA = colorA => {console.log(colorA)}
+undefined
+for(var element of colors){getColorsA(element)}
+VM1585:1 Negro
+VM1585:1 Amarillo
+VM1585:1 Rojo
+undefined
